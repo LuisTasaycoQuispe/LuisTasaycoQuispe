@@ -1,9 +1,9 @@
 name: Commit
 
 on:
-  schedule:
-    # Ejecutar todos los días a las 9:20 AM hora Perú (UTC-5)
-    - cron: '20 14 * * *'  # 9:20 AM en Perú es 2:20 PM UTC
+  push:
+    branches:
+      - main
 
 jobs:
   commit:
